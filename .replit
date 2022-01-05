@@ -1,2 +1,6 @@
-language = "bash"
-run = ""
+run="python3 06_Numbers_Operators_and_Comments/06.py"
+language="python3"
+onBoot="echo Booting up!"
+
+[packager]
+ignoredPaths=[".git"]

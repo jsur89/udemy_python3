@@ -1,4 +1,4 @@
-run="python3 main.py"
+run="python3 /home/runner/udemypython3/13_Lists_Comprehensions/13.py"
 language="python3"
 onBoot="echo Booting up!"
 

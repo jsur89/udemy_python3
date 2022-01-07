@@ -95,3 +95,52 @@ list_of_names = ["Ellie","Tim","Matt"]
 answer2 = [name[::-1].lower() for name in list_of_names]
 print(answer2)
 
+####################################################
+# For all the numbers between 1 and 100 (including 100), create a variable called ANSWER, which contains a list with all the numbers thar are divisible by 12.
+
+my_range = range(1,101)
+answer = [num for num in my_range if num % 12 == 0]
+print(answer)
+
+####################################################
+# Given the string 'amazing', create a variable called answer which is a list containing all the letters from 'amazing' except without any vowels.
+
+amazing_string = 'amazing'
+answer = [letter for letter in amazing_string if letter not in('aeiou')]
+print(answer)
+
+####################################################
+# Using List Comprehension and range(), create a variable called answer with the following value - [[0,1,2],[0,1,2],[0,1,2]]
+
+answer = [[var for var in range(0,3)] for x in range(0,3)]
+print(answer)
+
+
+####################################################
+# Using list comprehension, create a v ariable called answer with the following value:
+# [
+# 	[0,1,2,3,4,5,6,7,8,9],
+# 	[0,1,2,3,4,5,6,7,8,9],
+# 	[0,1,2,3,4,5,6,7,8,9],
+# 	[0,1,2,3,4,5,6,7,8,9],
+# 	[0,1,2,3,4,5,6,7,8,9],
+# 	[0,1,2,3,4,5,6,7,8,9],
+# 	[0,1,2,3,4,5,6,7,8,9],
+# 	[0,1,2,3,4,5,6,7,8,9],
+# 	[0,1,2,3,4,5,6,7,8,9],
+# 	[0,1,2,3,4,5,6,7,8,9]
+# ]
+# It's a 10x10 nested list. 10 rows, each row contains the numbers 0-9.
+answer = [[num for num in range(0,10)] for x in range(1,11)]
+print(answer)
+
+
+
+# ~~~~~~~*****RECAP!!*****~~~~~~~
+# lists are fundamental data structures for ordered information
+# lists can be include any type, even other lists!
+# we can modify lists using a variety of methods
+# slices are quite useful when making copies of lists
+# list comprehension is used everywhere when iterating over lists, strings, ranges and even more data types!
+# nested lists are essential for building more complex data structures like matrices, game boards and mazes
+# swapping is quite useful when shuffling or sorting
